@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket  = "kunduso-terraform-remote-bucket"
+    bucket  = "zhuofan-terraform-state"
     encrypt = true
-    key     = "tf/add-aws-ecr-ecs-fargate/deploy-ecs.tfstate"
+    key     = "deploy/terraform.tfstate"
     region  = "eu-north-1"
   }
 }
